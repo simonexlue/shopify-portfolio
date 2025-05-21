@@ -11,13 +11,44 @@
   "sections": {
     "main": {
       "type": "hero-banner",
-      "settings": {}
+      "settings": {
+        "heading": "Hi, I'm Simone Lue",
+        "subheading": "A front-end developer & Shopify learner"
+      }
     },
     "project-grid": {
-      "type": "projects-showcase"
+      "type": "projects-showcase",
+      "blocks": {
+        "project_yjjWpK": {
+          "type": "project",
+          "settings": {
+            "image": "shopify://shop_images/Main_b13ad453-477c-4ed1-9b43-81f3345adfd6.jpg",
+            "title": "Project A",
+            "description": "testing the project A card",
+            "link": ""
+          }
+        },
+        "project_TqXXkp": {
+          "type": "project",
+          "settings": {
+            "image": "shopify://shop_images/Main_52f8e304-92d9-4a36-82af-50df8fe31c69.jpg",
+            "title": "Project B",
+            "description": "testing project B",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "project_yjjWpK",
+        "project_TqXXkp"
+      ],
+      "settings": {
+        "title": "My projects"
+      }
     },
     "footer": {
-      "type": "footer"
+      "type": "footer",
+      "settings": {}
     }
   },
   "order": [
