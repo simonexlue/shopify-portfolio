@@ -1,0 +1,24 @@
+<section class="hero">
+    <h1>{{ section.settings.heading }}</h1>
+    <p>{{ section.settings.subheading }}</p>
+</section>
+
+{% schema %} 
+{
+    "name": "Hero Banner",
+    "settings": [
+        {
+            "type": "text",
+            "id": "heading",
+            "label": "Heading",
+            "default": "Hi, I'm Simone Lue"
+        },
+        {
+            "type": "text",
+            "id": "subheading",
+            "label": "Subheading",
+            "default": "A front-end developer & Shopify learner"
+        }
+    ]
+}
+{% endschema %}

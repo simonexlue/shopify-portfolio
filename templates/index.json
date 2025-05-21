@@ -10,11 +10,19 @@
 {
   "sections": {
     "main": {
-      "type": "hello-world",
+      "type": "hero-banner",
       "settings": {}
+    },
+    "project-grid": {
+      "type": "projects-showcase"
+    },
+    "footer": {
+      "type": "footer"
     }
   },
   "order": [
-    "main"
+    "main",
+    "project-grid",
+    "footer"
   ]
 }
