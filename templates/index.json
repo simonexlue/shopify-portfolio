@@ -12,7 +12,7 @@
     "main": {
       "type": "hero-banner",
       "settings": {
-        "heading": "Hi, I'm Simone Lue",
+        "heading": "Hi, I'm Simone!",
         "subheading": "A front-end developer & Shopify learner"
       }
     },
@@ -23,9 +23,9 @@
           "type": "project",
           "settings": {
             "image": "shopify://shop_images/Main_b13ad453-477c-4ed1-9b43-81f3345adfd6.jpg",
-            "title": "Project A",
+            "title": "WayPoint",
             "description": "testing the project A card",
-            "link": ""
+            "link": "https://github.com/latte-labs/waypoint"
           }
         },
         "project_TqXXkp": {
