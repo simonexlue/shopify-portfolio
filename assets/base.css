@@ -1,8 +1,10 @@
+/* TITLE BANNER */
 .hero {
     text-align: center;
     padding: 2rem 2rem;
 }
 
+/* PROJECTS */
 .projects {
     padding: 2rem;
     
@@ -10,14 +12,14 @@
 
 .project-grid {
     display: grid;
-    grid-template-columns: auto auto auto;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 2rem;
 }
 
 .project-card {
     border: 1px solid grey;
     border-radius: 15px;
-    padding: 1rem;
+    padding: 2rem;
     text-align: center;
     box-shadow: 1px 5px 10px grey;
     transition: transform 0.2s ease;
@@ -27,6 +29,8 @@
     transform: translateY(-5px);
 }
 
+
+/* FOOTER */
 footer {
     opacity: 0.8;
     display:inline-flex;

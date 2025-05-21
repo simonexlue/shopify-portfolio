@@ -24,7 +24,7 @@
           "settings": {
             "image": "shopify://shop_images/Main_b13ad453-477c-4ed1-9b43-81f3345adfd6.jpg",
             "title": "WayPoint",
-            "description": "testing the project A card",
+            "description": "WayPoint is a React Native travel app that offers personalized destination and event recommendations based on user preferences. Features include a travel style quiz, interactive maps, real-time itinerary planning with friends, and a gamified badge system. Integrated with Google Places, OpenWeatherMaps, Firebase, and OpenAI for dynamic travel experiences.",
             "link": "https://github.com/latte-labs/waypoint"
           }
         },
