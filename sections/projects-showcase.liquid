@@ -1,13 +1,14 @@
-<section class="projects">
+<section class="projects" id="projects"> 
   <h2>{{ section.settings.title }}</h2>
   <div class="project-grid">
     {% for block in section.blocks %}
       <div class="project-card">
-        <img src="{{ block.settings.image | image_url: width: 400, height: 400 }}" alt="{{ block.settings.title }}"
-        width="400"
-        height="400">
+        <img src="{{ block.settings.image | image_url: width: 1000 }}" alt="{{ block.settings.title }}"
+        width="450"
+        height="400"
+        class="project-image">
         <h3>{{ block.settings.title }}</h3>
-        <p>{{ block.settings.description }}</p>
+        <p class="project-description">{{ block.settings.description }}</p>
         {% if block.settings.link != blank %}
           <a href="{{ block.settings.link }}" target="_blank">View Project</a>
         {% endif %}

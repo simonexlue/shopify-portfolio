@@ -10,9 +10,9 @@
 {
   "sections": {
     "main": {
-      "type": "hero-banner",
+      "type": "banner",
       "settings": {
-        "heading": "Hi, I'm Simone!",
+        "heading": "Simone L.",
         "subheading": "A front-end developer & Shopify learner"
       }
     },
@@ -22,7 +22,7 @@
         "project_yjjWpK": {
           "type": "project",
           "settings": {
-            "image": "shopify://shop_images/Main_b13ad453-477c-4ed1-9b43-81f3345adfd6.jpg",
+            "image": "shopify://shop_images/app_slides.jpg",
             "title": "WayPoint",
             "description": "WayPoint is a React Native travel app that offers personalized destination and event recommendations based on user preferences. Features include a travel style quiz, interactive maps, real-time itinerary planning with friends, and a gamified badge system. Integrated with Google Places, OpenWeatherMaps, Firebase, and OpenAI for dynamic travel experiences.",
             "link": "https://github.com/latte-labs/waypoint"
@@ -46,6 +46,13 @@
         "title": "My projects"
       }
     },
+    "about-me": {
+      "type": "about-me",
+      "settings": {
+        "heading": "Hi! I'm Simone Lue",
+        "subheading": "A Front-end Software Developer based in Vancouver, B.C."
+      }
+    },
     "footer": {
       "type": "footer",
       "settings": {}
@@ -53,6 +60,7 @@
   },
   "order": [
     "main",
+    "about-me",
     "project-grid",
     "footer"
   ]

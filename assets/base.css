@@ -1,18 +1,68 @@
-/* TITLE BANNER */
-.hero {
-    text-align: center;
+/* FONT */
+body {
+    font-family: 'Montserrat', sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-weight: 300;
+    background-color: 	#202023;
+    color: azure;
+}
+
+h2 {
+    font-weight: 300;
+    font-size: 22px;
+}
+
+h3 {
+    font-weight: 200;
+    font-size: 20px;
+}
+
+/* BANNER */
+.banner {
+    text-align: start;
     padding: 2rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.top-nav {
+    display: flex;
+    justify-content: end;
+}
+
+.top-nav ul {
+    list-style: none;
+    display: flex;
+    gap: 3rem;
+}
+
+.top-nav a {
+    text-decoration: none;
+    color: azure;
+}
+
+.top-nav a:hover {
+    color: grey;
+}
+
+/* ABOUT ME */
+.about-me {
+    padding: 2rem;
+    text-align: end;
+    background-color: black;
 }
 
 /* PROJECTS */
 .projects {
     padding: 2rem;
-    
+    background-color: #202023;
 }
 
 .project-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-template-columns: repeat(3, minmax(0, 1fr));
     gap: 2rem;
 }
 
@@ -23,16 +73,30 @@
     text-align: center;
     box-shadow: 1px 5px 10px grey;
     transition: transform 0.2s ease;
+    background-color: #24292f;
 }
 
 .project-card:hover {
-    transform: translateY(-5px);
+    transform: translateY(-10px);
 }
 
+.project-image {
+    width: 100%;
+    aspect-ratio: 4 / 3;
+    object-fit: contain;
+    display: block;
+    border-radius: 15px;
+}
+
+.project-description {
+    padding: 0 2rem;
+    line-height: 1.5rem;
+    text-align: start;
+}
 
 /* FOOTER */
 footer {
     opacity: 0.8;
-    display:inline-flex;
+    display: inline-flex;
     padding: 2rem;
 }

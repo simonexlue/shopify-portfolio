@@ -1,0 +1,24 @@
+<section class="about-me" id="about">
+    <h1>{{ section.settings.heading }}</h1>
+    <h3>{{ section.settings.subheading }}</h3>
+</section>
+
+{% schema %}
+{
+    "name": "About Me",
+    "settings": [
+        {
+            "type": "text",
+            "id": "heading",
+            "label": "title",
+            "default": "Hi! I'm Simone Lue"
+        },
+        {
+            "type": "text",
+            "id": "subheading",
+            "label": "subheading",
+            "default": "A Front-end Software Developer based in Vancouver, B.C."
+        }
+    ]
+}
+{% endschema %}
