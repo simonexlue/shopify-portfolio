@@ -6,7 +6,8 @@ body {
   color: #d4d4d4;   
   font-weight: 300;  
   margin-left: 0;    
-  margin-right: 0;   
+  margin-right: 0;  
+  margin-bottom: 0; 
 }
 
 h1 {
@@ -67,6 +68,7 @@ p {
 
 /* ABOUT ME */
 /* ------------------------------------- */
+
 .about-me {
     padding: 2rem;
     background-color: rgb(12,14,18);
@@ -91,6 +93,45 @@ p {
     padding: 3rem;
 }
 
+.typewriter {
+    display: inline-block;
+}
+
+.cursor {
+    display: inline-block;
+    background-color: currentColor;
+    width: 1px;
+    height: 1em;
+    margin-left: 2px;
+    animation: blink 1s step-end infinite;
+    vertical-align: middle;
+}
+
+@keyframes blink {
+    0%, 100% {opacity: 0;}
+    50% {opacity: 1;}
+}
+
+/*phone size*/
+@media (max-width: 768px) {
+    .about-me {
+        flex-direction: column;
+        padding: 2rem;
+        gap: 2rem;
+    }
+
+    .text-section {
+        width: 100%;
+        padding: 0;
+    }
+
+    .image-section img {
+        width: 100%;
+        height: 100%;
+        padding: 0;
+    }
+}
+
 /* PROJECTS */
 /* ------------------------------------- */
 .projects {
@@ -100,7 +141,7 @@ p {
 
 .project-grid {
     display: grid;
-    grid-template-columns: repeat(3, minmax(0, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
     gap: 2rem;
     padding-bottom: 2rem;
 }
@@ -142,6 +183,7 @@ p {
 /* ------------------------------------- */
 .contact-me {
     padding: 2rem;
+    padding-bottom: 4rem;
     background-color: rgb(12,14,18);
 }
 
@@ -179,4 +221,17 @@ p {
 
 .social-icon p {
     color: #d4d4d4;
+}
+
+/*phone size*/
+@media (max-width: 768px) {
+  .contact-section {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+  .contact-icons {
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding-left: 0.5rem;
+  }
 }
