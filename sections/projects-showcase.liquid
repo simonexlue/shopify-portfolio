@@ -1,5 +1,7 @@
 <section class="projects" id="projects"> 
-  <h2>{{ section.settings.title }}</h2>
+  {% raw %}
+  <h2 class="section-titles">{% My Projects %}</h2>
+  {% endraw %}
   <div class="project-grid">
     {% for block in section.blocks %}
       <div class="project-card">
@@ -10,7 +12,7 @@
         <h3>{{ block.settings.title }}</h3>
         <p class="project-description">{{ block.settings.description }}</p>
         {% if block.settings.link != blank %}
-          <a href="{{ block.settings.link }}" target="_blank">View Project</a>
+          <a class="link-a" href="{{ block.settings.link }}" target="_blank">View Project</a>
         {% endif %}
       </div>
     {% endfor %}
@@ -21,12 +23,7 @@
 {
   "name": "Projects",
   "settings": [
-    {
-      "type": "text",
-      "id": "title",
-      "label": "Section Title",
-      "default": "My projects"
-    }
+    
   ],
   "blocks": [
     {

@@ -1,3 +1,46 @@
 <section class="contact-me" id="contact">
-    
+  {% raw %}
+    <h2 class="section-titles">{% Contact %}</h2>
+    {% endraw %}
+
+  <div class="contact-section">
+    <div class="contact-message">
+      <h3>{{ section.settings.heading }}</h3>
+      <p>{{ section.settings.message }}</p>
+    </div>
+    <div class="contact-icons">
+        <a href="https://www.linkedin.com/in/simonelue/" target="_blank" class="social-icon" aria-label="LinkedIn">
+          <img src="{{ 'linkedin.svg' | asset_url }}" alt="LinkedIn icon" width="24" height="24">
+          <p>/in/simone-lue</p>
+        </a>
+
+        <a href="https://github.com/simonexlue" target="_blank" class="social-icon" aria-label="Github">
+          <img src="{{ 'github.svg' | asset_url }}" alt="Github icon" width="24" height="24">
+          <p>simonexlue</p>
+        </a>
+
+        <a href="mailto:simonexlue@gmail.com" target="_blank" class="social-icon" aria-label="Email">
+            <img src="{{ 'email.svg' | asset_url}}" alt="Email icon" width="24" height="24">
+            <p>simonexlue@gmail.com</p>
+            </a>
+    </div>
+  </div>
 </section>
+
+{% schema %}
+{
+    "name": "Contact",
+    "settings": [
+        {
+            "type": "text",
+            "id": "heading",
+            "label": "title",
+        },
+        {
+            "type": "textarea",
+            "id": "message",
+            "label": "message",
+        },
+    ]
+}
+{% endschema %}

@@ -1,24 +1,58 @@
 <section class="about-me" id="about">
+  {% for block in section.blocks %}
+    {% if block.type == 'image' %}
+      <div class="image-section">
+        <img
+          src="{{ block.settings.image | image_url: width: 1000 }}"
+          width="500"
+          height="500"
+          alt="Image of Simone working at her desk"
+        >
+      </div>
+    {% endif %}
+  {% endfor %}
+
+  <div class="text-section">
     <h1>{{ section.settings.heading }}</h1>
     <h3>{{ section.settings.subheading }}</h3>
+    <p>{{ section.settings.description }}</p>
+  </div>
 </section>
 
 {% schema %}
 {
-    "name": "About Me",
-    "settings": [
+  "name": "About Me",
+  "settings": [
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "title",
+      "default": "Hi! I'm Simone Lue"
+    },
+    {
+      "type": "text",
+      "id": "subheading",
+      "label": "subheading",
+      "default": "A Front-end Software Developer based in Vancouver, B.C."
+    },
+    {
+      "type": "text",
+      "id": "description",
+      "label": "description"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "image",
+      "name": "Image",
+      "settings": [
         {
-            "type": "text",
-            "id": "heading",
-            "label": "title",
-            "default": "Hi! I'm Simone Lue"
-        },
-        {
-            "type": "text",
-            "id": "subheading",
-            "label": "subheading",
-            "default": "A Front-end Software Developer based in Vancouver, B.C."
+          "type": "image_picker",
+          "id": "image",
+          "label": "image"
         }
-    ]
+      ]
+    }
+  ]
 }
 {% endschema %}

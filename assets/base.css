@@ -1,24 +1,38 @@
 /* FONT */
+/* ------------------------------------- */
 body {
-    font-family: 'Montserrat', sans-serif;
-    font-optical-sizing: auto;
-    font-style: normal;
-    font-weight: 300;
-    background-color: 	#202023;
-    color: azure;
+  font-family: 'Fira Code', monospace;
+  background-color: rgb(2,5,10); 
+  color: #d4d4d4;   
+  font-weight: 300;         
+}
+
+h1 {
+   color: #dcdcaa; 
 }
 
 h2 {
     font-weight: 300;
     font-size: 22px;
+    color: #c586c0;
 }
 
 h3 {
     font-weight: 200;
     font-size: 20px;
+    color: #569cd6;
+}
+
+p {
+    color: #ce9178;
+}
+
+.section-titles {
+    color: #ffd700;
 }
 
 /* BANNER */
+/* ------------------------------------- */
 .banner {
     text-align: start;
     padding: 2rem 2rem;
@@ -41,29 +55,51 @@ h3 {
 .top-nav a {
     text-decoration: none;
     color: azure;
+    border-top: 2px solid #569cd6;
+    padding-top: 5px
 }
 
 .top-nav a:hover {
-    color: grey;
+    color: #569cd6;
 }
 
 /* ABOUT ME */
+/* ------------------------------------- */
 .about-me {
     padding: 2rem;
+    background-color: rgb(12,14,18);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 4rem;
+}
+
+.image-section {
+    max-width: 100%;
+    padding-left: 20px;
+    height: auto;
+}
+
+.text-section {
     text-align: end;
-    background-color: black;
+    width: 40%;
+    line-height: 1.5rem;
+    padding: 3rem;
 }
 
 /* PROJECTS */
+/* ------------------------------------- */
 .projects {
     padding: 2rem;
-    background-color: #202023;
+    background-color: rgb(2,5,10);
 }
 
 .project-grid {
     display: grid;
     grid-template-columns: repeat(3, minmax(0, 1fr));
     gap: 2rem;
+    padding-bottom: 2rem;
 }
 
 .project-card {
@@ -73,7 +109,7 @@ h3 {
     text-align: center;
     box-shadow: 1px 5px 10px grey;
     transition: transform 0.2s ease;
-    background-color: #24292f;
+    background-color: rgb(12,14,18);
 }
 
 .project-card:hover {
@@ -89,14 +125,55 @@ h3 {
 }
 
 .project-description {
-    padding: 0 2rem;
+    padding: 0 1rem;
     line-height: 1.5rem;
     text-align: start;
 }
 
-/* FOOTER */
-footer {
-    opacity: 0.8;
-    display: inline-flex;
+.link-a {
+    text-decoration: red wavy underline;
+    color: #d4d4d4;
+}
+
+/* CONTACT */
+/* ------------------------------------- */
+.contact-me {
     padding: 2rem;
+    background-color: rgb(12,14,18);
+}
+
+.contact-section {
+    display: grid;
+    grid-template-columns: 60% 40%;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.contact-message {
+    line-height: 1.5rem;
+}
+
+.contact-icons {
+    width: 40%;
+    padding-left: 6rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    gap: 1rem;
+    align-items: flex-start;
+}
+
+.social-icon {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-right: 1rem;
+    transition: color 0.2s ease;
+    /* text-decoration: red wavy underline; */
+    text-decoration: none;
+}
+
+.social-icon p {
+    color: #d4d4d4;
 }

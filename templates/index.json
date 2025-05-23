@@ -12,8 +12,26 @@
     "main": {
       "type": "banner",
       "settings": {
-        "heading": "Simone L.",
-        "subheading": "A front-end developer & Shopify learner"
+        "heading": "Simone L."
+      }
+    },
+    "about-me": {
+      "type": "about-me",
+      "blocks": {
+        "image_jtAj4c": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/working.png"
+          }
+        }
+      },
+      "block_order": [
+        "image_jtAj4c"
+      ],
+      "settings": {
+        "heading": "Hi! I'm Simone Lue",
+        "subheading": "A Front-end Software Developer based in Vancouver, B.C.",
+        "description": "A frontend developer who’s passionate about turning ideas into interactive, user-friendly digital experiences. I love building clean, responsive interfaces that make people’s lives easier, whether it’s through a mobile app or a creative side project. When I’m not coding, you can find me at the gym, hitting some golf balls, or learning a new skill!"
       }
     },
     "project-grid": {
@@ -42,26 +60,21 @@
         "project_yjjWpK",
         "project_TqXXkp"
       ],
-      "settings": {
-        "title": "My projects"
-      }
-    },
-    "about-me": {
-      "type": "about-me",
-      "settings": {
-        "heading": "Hi! I'm Simone Lue",
-        "subheading": "A Front-end Software Developer based in Vancouver, B.C."
-      }
-    },
-    "footer": {
-      "type": "footer",
       "settings": {}
-    }
+    },
+    "contact-me": {
+      "type": "contact",
+      "settings": {
+        "heading": "Connect with me!",
+        "message": "Feel free to shoot me a message if you want to connect or if you're looking for the perfect frontend developer hire! :)",
+        
+      }
+    },
   },
   "order": [
     "main",
     "about-me",
     "project-grid",
-    "footer"
+    "contact-me",
   ]
 }
