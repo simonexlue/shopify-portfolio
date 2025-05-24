@@ -46,19 +46,39 @@
             "link": "https://github.com/latte-labs/waypoint"
           }
         },
-        "project_TqXXkp": {
+        "project_kfxDY3": {
           "type": "project",
           "settings": {
-            "image": "shopify://shop_images/Main_52f8e304-92d9-4a36-82af-50df8fe31c69.jpg",
+            "image": "shopify://shop_images/Main_b13ad453-477c-4ed1-9b43-81f3345adfd6.jpg",
             "title": "Project B",
-            "description": "testing project B",
+            "description": "This is a sample project to test the spacing",
+            "link": ""
+          }
+        },
+        "project_eMtJHF": {
+          "type": "project",
+          "settings": {
+            "image": "shopify://shop_images/theme_cover_image.jpg",
+            "title": "Project C",
+            "description": "This is sample project C to test out spacing",
+            "link": ""
+          }
+        },
+        "project_mm73eg": {
+          "type": "project",
+          "settings": {
+            "image": "shopify://shop_images/snowboard_purple_hydrogen.png",
+            "title": "Project D",
+            "description": "This is sample project D to test out spaceing",
             "link": ""
           }
         }
       },
       "block_order": [
         "project_yjjWpK",
-        "project_TqXXkp"
+        "project_kfxDY3",
+        "project_eMtJHF",
+        "project_mm73eg"
       ],
       "settings": {}
     },
@@ -66,15 +86,14 @@
       "type": "contact",
       "settings": {
         "heading": "Connect with me!",
-        "message": "Feel free to shoot me a message if you want to connect or if you're looking for the perfect frontend developer hire! :)",
-        
+        "message": "Feel free to shoot me a message if you want to connect or if you're looking for the perfect frontend developer hire! :)"
       }
-    },
+    }
   },
   "order": [
     "main",
     "about-me",
     "project-grid",
-    "contact-me",
+    "contact-me"
   ]
 }

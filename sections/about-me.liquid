@@ -13,9 +13,13 @@
   {% endfor %}
 
   <div class="text-section">
+    {% raw %}
+    <h2 class="section-titles">{% About Me %}</h2>
+  {% endraw %}
     <h1>{{ section.settings.heading }}</h1>
     <h3>{{ section.settings.subheading }}</h3>
-    <p class="typewriter">{{ section.settings.description }}
+    <p class="typewriter">
+      {{ section.settings.description }}
       <span class="cursor"></span>
     </p>
   </div>

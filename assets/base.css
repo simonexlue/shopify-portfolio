@@ -1,17 +1,18 @@
 /* FONT */
 /* ------------------------------------- */
 body {
-  font-family: 'Fira Code', monospace;
-  background-color: rgb(2,5,10); 
-  color: #d4d4d4;   
-  font-weight: 300;  
-  margin-left: 0;    
-  margin-right: 0;  
-  margin-bottom: 0; 
+    font-family: 'Fira Code', monospace;
+    background-color: rgb(2, 5, 10);
+    color: #d4d4d4;
+    font-weight: 300;
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: 0;
+    overflow-x: hidden;
 }
 
 h1 {
-   color: #dcdcaa; 
+    color: #dcdcaa;
 }
 
 h2 {
@@ -38,10 +39,14 @@ p {
 /* ------------------------------------- */
 .banner {
     text-align: start;
-    padding: 2rem 2rem;
+    padding: 1rem 2rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+
+.banner h1 {
+    font-size: 14px;
 }
 
 .top-nav {
@@ -52,7 +57,8 @@ p {
 .top-nav ul {
     list-style: none;
     display: flex;
-    gap: 3rem;
+    gap: 1rem;
+    font-size: 10px;
 }
 
 .top-nav a {
@@ -66,31 +72,39 @@ p {
     color: #569cd6;
 }
 
+@media (min-width: 768px) {
+    .banner h1 {
+        font-size: 24px;
+        padding: 0rem 2rem;
+    }
+
+    .top-nav ul {
+        font-size: 14px;
+        gap: 2rem;
+    }
+}
+
 /* ABOUT ME */
 /* ------------------------------------- */
 
 .about-me {
-    padding: 2rem;
-    background-color: rgb(12,14,18);
     display: flex;
+    gap: 1.5rem;
+    background-color: rgb(12, 14, 18);
+    padding: 2rem;
     align-items: center;
     justify-content: center;
-    flex-wrap: wrap;
-    gap: 4rem;
-    margin: 0px;
-}
-
-.image-section {
-    max-width: 100%;
-    padding-left: 20px;
-    height: auto;
 }
 
 .text-section {
-    text-align: end;
-    width: 40%;
-    line-height: 1.5rem;
-    padding: 3rem;
+    width: 100%;
+    padding: 0;
+}
+
+.image-section img {
+    width: 100%;
+    height: 100%;
+    padding: 0;
 }
 
 .typewriter {
@@ -108,52 +122,102 @@ p {
 }
 
 @keyframes blink {
-    0%, 100% {opacity: 0;}
-    50% {opacity: 1;}
+
+    0%,
+    100% {
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 1;
+    }
 }
 
-/*phone size*/
-@media (max-width: 768px) {
+@media (max-width: 960px) {
     .about-me {
         flex-direction: column;
+    }
+}
+
+@media (min-width: 768px) {
+    .about-me {
         padding: 2rem;
         gap: 2rem;
     }
 
     .text-section {
         width: 100%;
-        padding: 0;
+        padding: 2rem;
+
     }
 
     .image-section img {
-        width: 100%;
-        height: 100%;
-        padding: 0;
+        max-width: 100%;
+        padding-left: 20px;
+        height: auto;
     }
 }
+
+@media (min-width: 601px) and (max-width: 960px) {
+    .about-me {
+        padding: 2rem 4rem;
+    }
+}
+
+@media (min-width: 960px) {
+    .about-me {
+        text-align: end;
+    }
+}
+
+@media (min-width: 1060px) {
+    .about-me {
+        padding: 2rem;
+        background-color: rgb(12, 14, 18);
+        gap: 4rem;
+        margin: 0px;
+    }
+
+    .text-section {
+        width: 40%;
+        line-height: 1.5rem;
+        padding: 3rem;
+        padding-right: 0;
+    }
+
+    .image-section {
+        max-width: 40%;
+    }
+
+
+    .image-section img {
+        max-width: 100%;
+        padding-left: 2rem;
+        height: auto;
+    }
+}
+
 
 /* PROJECTS */
 /* ------------------------------------- */
 .projects {
     padding: 2rem;
-    background-color: rgb(2,5,10);
 }
 
 .project-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-    gap: 2rem;
+    gap: 1rem;
     padding-bottom: 2rem;
 }
 
 .project-card {
     border: 1px solid grey;
     border-radius: 15px;
-    padding: 2rem;
+    padding: 0rem 1rem 2rem 1rem;
     text-align: center;
     box-shadow: 1px 5px 10px grey;
     transition: transform 0.2s ease;
-    background-color: rgb(12,14,18);
+    background-color: rgb(12, 14, 18);
 }
 
 .project-card:hover {
@@ -163,13 +227,15 @@ p {
 .project-image {
     width: 100%;
     aspect-ratio: 4 / 3;
-    object-fit: contain;
+    object-fit:contain;
     display: block;
-    border-radius: 15px;
+    /* border: 2px solid red; */
+    height: auto;
+    padding-top: 1rem;
 }
 
 .project-description {
-    padding: 0 1rem;
+    padding: 0rem 0.5rem;
     line-height: 1.5rem;
     text-align: start;
 }
@@ -179,20 +245,51 @@ p {
     color: #d4d4d4;
 }
 
+@media (max-width: 600px) {
+    .project-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (min-width: 601px) and (max-width: 960px) {
+    .projects {
+        padding: 2rem 4rem;
+    }
+    .project-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (min-width: 960px) {
+    .projects {
+        padding: 2rem 8rem;
+    }
+
+    .project-image {
+        max-width: 350px;
+        width: 100%;
+        height: auto;
+        object-fit: contain;
+        margin: 0 auto;
+    }
+
+    .project-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
 /* CONTACT */
 /* ------------------------------------- */
+
 .contact-me {
-    padding: 2rem;
-    padding-bottom: 4rem;
-    background-color: rgb(12,14,18);
+    padding: 2rem 8rem;
+    background-color: rgb(12, 14, 18);
 }
 
 .contact-section {
     display: grid;
-    grid-template-columns: 60% 40%;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: 2rem;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
 }
 
 .contact-message {
@@ -200,13 +297,9 @@ p {
 }
 
 .contact-icons {
-    width: 40%;
-    padding-left: 6rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: end;
-    gap: 1rem;
+    justify-content: flex-start;
     align-items: flex-start;
+    padding-left: 0.5rem;
 }
 
 .social-icon {
@@ -214,8 +307,6 @@ p {
     align-items: center;
     gap: 1rem;
     margin-right: 1rem;
-    transition: color 0.2s ease;
-    /* text-decoration: red wavy underline; */
     text-decoration: none;
 }
 
@@ -223,15 +314,28 @@ p {
     color: #d4d4d4;
 }
 
-/*phone size*/
-@media (max-width: 768px) {
-  .contact-section {
-    grid-template-columns: 1fr;
-    gap: 1.5rem;
-  }
-  .contact-icons {
-    justify-content: flex-start;
-    align-items: flex-start;
-    padding-left: 0.5rem;
-  }
+@media (max-width: 600px) {
+    .contact-me {
+        padding: 2rem;
+    }
+}
+
+@media (min-width: 601px) and (max-width: 960px) {
+    .contact-me {
+        padding: 2rem 4rem;
+    }
+}
+
+@media (min-width: 1060px) {
+    .contact-section {
+        grid-template-columns: 60% 40%;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 6rem;
+    }
+
+    .contact-icons {
+        align-items: flex-end;
+        padding-left: 2rem;
+    }
 }
