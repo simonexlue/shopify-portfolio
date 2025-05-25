@@ -1,0 +1,91 @@
+<section class="skills">
+  {% raw %}
+      <h2 class="section-titles">{% Skills %}</h2>
+    {% endraw %}
+
+  <h3 class="skill-title">Frontend</h3>
+  <div class="skill-section">
+    {% for block in section.blocks %}
+      {% if block.settings.category == 'frontend' %}
+        <div class="skill">
+          <img
+            src="{{ block.settings.svg | image_url: width:50, height:50 }}"
+            alt="{{ block.settings['title'] }}"
+            width="24"
+            height="24"
+          >
+          <p>{{ block.settings['title'] }}</p>
+        </div>
+      {% endif %}
+    {% endfor %}
+  </div>
+
+  <h3 class="skill-title">Backend</h3>
+  <div class="skill-section">
+    {% for block in section.blocks %}
+      {% if block.settings.category == 'backend' %}
+        <div class="skill">
+          <img
+            src="{{ block.settings.svg | image_url: width:50, height:50 }}"
+            alt="{{ block.settings["title"] }}"
+            width="24"
+            height="24"
+          >
+          <p>{{ block.settings['title'] }}</p>
+        </div>
+      {% endif %}
+    {% endfor %}
+  </div>
+
+  <h3 class="skill-title">Other</h3>
+  <div class="skill-section">
+    {% for block in section.blocks %}
+      {% if block.settings.category == 'other' %}
+        <div class="skill">
+          <img
+            src="{{ block.settings.svg | image_url: width:50, height:50 }}"
+            alt="{{ block.settings['title'] }}"
+            width="24"
+            height="24"
+          >
+          <p>{{ block.settings['title'] }}</p>
+        </div>
+      {% endif %}
+    {% endfor %}
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "Skills",
+  "settings": [],
+  "blocks": [
+    {
+      "type": "skill",
+      "name": "Skills",
+      "settings": [
+        {
+          "type": "select",
+          "id": "category",
+          "label": "Category",
+          "options": [
+            { "value": "frontend", "label": "Frontend" },
+            { "value": "backend", "label": "Backend" },
+            { "value": "other", "label": "Other" }
+          ]
+        },
+        {
+          "type": "text",
+          "id": "title",
+          "label": "Skill Name"
+        },
+        {
+          "type": "image_picker",
+          "id": "svg",
+          "label": "Skill SVG"
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}

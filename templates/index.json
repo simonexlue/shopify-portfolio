@@ -34,24 +34,68 @@
         "description": "A frontend developer who’s passionate about turning ideas into interactive, user-friendly digital experiences. I love building clean, responsive interfaces that make people’s lives easier, whether it’s through a mobile app or a creative side project. When I’m not coding, you can find me at the gym, hitting some golf balls, or learning a new skill!"
       }
     },
+    "skills": {
+      "type": "skills",
+      "blocks": {
+        "skill_eym47y": {
+          "type": "skill",
+          "settings": {
+            "category": "frontend",
+            "title": "Javascript",
+            "svg": "shopify://shop_images/javascript-logo-svgrepo-com.svg"
+          }
+        },
+        "skill_G4YK7x": {
+          "type": "skill",
+          "settings": {
+            "category": "frontend",
+            "title": "HTML",
+            "svg": "shopify://shop_images/html5-01-svgrepo-com_1.svg"
+          }
+        },
+        "skill_dJf6Hm": {
+          "type": "skill",
+          "settings": {
+            "category": "backend",
+            "title": "node.js",
+            "svg": "shopify://shop_images/node-svgrepo-com.svg"
+          }
+        },
+        "skill_CyGrrc": {
+          "type": "skill",
+          "settings": {
+            "category": "other",
+            "title": "Github",
+            "svg": "shopify://shop_images/github-142-svgrepo-com.svg"
+          }
+        }
+      },
+      "block_order": [
+        "skill_eym47y",
+        "skill_G4YK7x",
+        "skill_dJf6Hm",
+        "skill_CyGrrc"
+      ],
+      "settings": {}
+    },
     "project-grid": {
       "type": "projects-showcase",
       "blocks": {
         "project_yjjWpK": {
           "type": "project",
           "settings": {
-            "image": "shopify://shop_images/app_slides.jpg",
+            "image": "shopify://shop_images/7869AE86-C24B-470C-9CD0-FE37CEFD94E8_1_201_a.jpg",
             "title": "WayPoint",
-            "description": "WayPoint is a React Native travel app that offers personalized destination and event recommendations based on user preferences. Features include a travel style quiz, interactive maps, real-time itinerary planning with friends, and a gamified badge system. Integrated with Google Places, OpenWeatherMaps, Firebase, and OpenAI for dynamic travel experiences.",
+            "description": "WayPoint is a React Native travel app that offers personalized destination and event recommendations based on user preferences.",
             "link": "https://github.com/latte-labs/waypoint"
           }
         },
         "project_kfxDY3": {
           "type": "project",
           "settings": {
-            "image": "shopify://shop_images/Main_b13ad453-477c-4ed1-9b43-81f3345adfd6.jpg",
-            "title": "Project B",
-            "description": "This is a sample project to test the spacing",
+            "image": "shopify://shop_images/Screenshot_2025-05-23_at_11.06.42_PM.png",
+            "title": "Portfolio",
+            "description": "A fully custom Shopify theme portfolio built from the ground up. It is fully responsive  and has a VSCode–inspired dark aesthetic to highlight both my design and coding skills.",
             "link": ""
           }
         },
@@ -63,22 +107,12 @@
             "description": "This is sample project C to test out spacing",
             "link": ""
           }
-        },
-        "project_mm73eg": {
-          "type": "project",
-          "settings": {
-            "image": "shopify://shop_images/snowboard_purple_hydrogen.png",
-            "title": "Project D",
-            "description": "This is sample project D to test out spaceing",
-            "link": ""
-          }
         }
       },
       "block_order": [
         "project_yjjWpK",
         "project_kfxDY3",
-        "project_eMtJHF",
-        "project_mm73eg"
+        "project_eMtJHF"
       ],
       "settings": {}
     },
@@ -93,6 +127,7 @@
   "order": [
     "main",
     "about-me",
+    "skills",
     "project-grid",
     "contact-me"
   ]

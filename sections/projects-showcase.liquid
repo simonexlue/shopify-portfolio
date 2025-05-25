@@ -5,14 +5,14 @@
   <div class="project-grid">
     {% for block in section.blocks %}
       <div class="project-card">
-        <img src="{{ block.settings.image | image_url: width: 1000 }}" alt="{{ block.settings.title }}"
+        <img src="{{ block.settings.image | image_url: width: 800, height: 500, crop: 'center'}}" alt="{{ block.settings.title }}"
         width="450"
-        height="400"
+        height="200"
         class="project-image">
         <h3>{{ block.settings.title }}</h3>
         <p class="project-description">{{ block.settings.description }}</p>
         {% if block.settings.link != blank %}
-          <a class="link-a" href="{{ block.settings.link }}" target="_blank">View Project</a>
+          <a class="link-a" href="/pages/{{ block.settings.title | handleize }}" target="_blank">See More</a>
         {% endif %}
       </div>
     {% endfor %}
