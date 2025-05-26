@@ -350,6 +350,11 @@ p {
     padding-bottom: 4rem;
 }
 
+.skill-groups {
+  display: flex;   
+  flex-direction: column;
+}
+
 .skill-title {
     font-size: 18px;
 }
@@ -366,4 +371,27 @@ p {
     align-items: center;
     justify-content: start;
     gap: 2rem;
+}
+
+@media (min-width: 600px) {
+    .skills {
+        padding: 2rem 4rem;
+        padding-bottom: 4rem;
+    }
+}
+
+@media (min-width: 960px) {
+    .skills {
+        padding: 2rem 8rem;
+        padding-bottom: 4rem;;
+    }
+    
+    .skill-groups {
+        flex-direction: row;
+        gap: 3rem;
+    }
+
+    .skill-group {
+        flex: 1 1 0;
+    }
 }

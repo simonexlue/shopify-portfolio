@@ -1,57 +1,65 @@
-<section class="skills">
+<section class="skills" id="skills">
   {% raw %}
       <h2 class="section-titles">{% Skills %}</h2>
     {% endraw %}
 
-  <h3 class="skill-title">Frontend</h3>
-  <div class="skill-section">
-    {% for block in section.blocks %}
-      {% if block.settings.category == 'frontend' %}
-        <div class="skill">
-          <img
-            src="{{ block.settings.svg | image_url: width:50, height:50 }}"
-            alt="{{ block.settings['title'] }}"
-            width="24"
-            height="24"
-          >
-          <p>{{ block.settings['title'] }}</p>
-        </div>
-      {% endif %}
-    {% endfor %}
-  </div>
+  <div class="skill-groups">
+    <div class="skill-group">
+      <h3 class="skill-title">Frontend</h3>
+      <div class="skill-section">
+        {% for block in section.blocks %}
+          {% if block.settings.category == 'frontend' %}
+            <div class="skill">
+              <img
+                src="{{ block.settings.svg | image_url: width:50, height:50 }}"
+                alt="{{ block.settings['title'] }}"
+                width="24"
+                height="24"
+              >
+              <p>{{ block.settings.title }}</p>
+            </div>
+          {% endif %}
+        {% endfor %}
+      </div>
+    </div>
 
-  <h3 class="skill-title">Backend</h3>
-  <div class="skill-section">
-    {% for block in section.blocks %}
-      {% if block.settings.category == 'backend' %}
-        <div class="skill">
-          <img
-            src="{{ block.settings.svg | image_url: width:50, height:50 }}"
-            alt="{{ block.settings["title"] }}"
-            width="24"
-            height="24"
-          >
-          <p>{{ block.settings['title'] }}</p>
-        </div>
-      {% endif %}
-    {% endfor %}
-  </div>
+    <div class="skill-group">
+    <h3 class="skill-title">Backend</h3>
+    <div class="skill-section">
+      {% for block in section.blocks %}
+        {% if block.settings.category == 'backend' %}
+          <div class="skill">
+            <img
+              src="{{ block.settings.svg | image_url: width:50, height:50 }}"
+              alt="{{ block.settings["title"] }}"
+              width="24"
+              height="24"
+            >
+            <p>{{ block.settings.title }}</p>
+          </div>
+        {% endif %}
+      {% endfor %}
+    </div>
+    </div>
 
-  <h3 class="skill-title">Other</h3>
-  <div class="skill-section">
-    {% for block in section.blocks %}
-      {% if block.settings.category == 'other' %}
-        <div class="skill">
-          <img
-            src="{{ block.settings.svg | image_url: width:50, height:50 }}"
-            alt="{{ block.settings['title'] }}"
-            width="24"
-            height="24"
-          >
-          <p>{{ block.settings['title'] }}</p>
-        </div>
-      {% endif %}
-    {% endfor %}
+    <div class="skill-group">
+    <h3 class="skill-title">Other</h3>
+    <div class="skill-section">
+      {% for block in section.blocks %}
+        {% if block.settings.category == 'other' %}
+          <div class="skill">
+            <img
+              src="{{ block.settings.svg | image_url: width:50, height:50 }}"
+              alt="{{ block.settings['title'] }}"
+              width="24"
+              height="24"
+            >
+            <p>{{ block.settings.title }}</p>
+          </div>
+        {% endif %}
+      {% endfor %}
+      </div>
+    </div>
   </div>
 </section>
 
