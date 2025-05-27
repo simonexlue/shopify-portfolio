@@ -7,7 +7,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
     <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js" defer></script>
-    
+
     {% # Load and preload the critical CSS %}
     {{ 'base.css' | asset_url | stylesheet_tag: preload: true }}
 
@@ -19,5 +19,34 @@
 
   <body>
     {{ content_for_layout }}
+
+    <script>
+      document.addEventListener('DOMContentLoaded', function () {
+        const sections = document.querySelectorAll('.about-me, .skills, .project-grid, .contact-me');
+
+        // observer
+        const io = new IntersectionObserver(
+          (entries) => {
+            entries.forEach((entry) => {
+              if (entry.isIntersecting) {
+                entry.target.classList.add('fx-show');
+              } else {
+                entry.target.classList.remove("fx-show")
+              }
+            });
+          },
+          {
+            threshold: 0.2, 
+          }
+        );
+
+        // initialize: mark hidden & start observing
+        sections.forEach((sec) => {
+          sec.classList.add('fx-reveal');
+          io.observe(sec);
+        });
+      });
+    </script>
+
   </body>
 </html>
