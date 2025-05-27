@@ -1,0 +1,121 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "project-detail": {
+      "type": "project-detail",
+      "blocks": {
+        "tech_anxGrc": {
+          "type": "tech",
+          "settings": {
+            "title": "React Native",
+            "category": "frontend",
+            "svg": "shopify://shop_images/react-svgrepo-com.svg"
+          }
+        },
+        "tech_hFQFYf": {
+          "type": "tech",
+          "settings": {
+            "title": "Javascript",
+            "category": "frontend",
+            "svg": "shopify://shop_images/javascript-logo-svgrepo-com.svg"
+          }
+        },
+        "tech_HqBQNU": {
+          "type": "tech",
+          "settings": {
+            "title": "Python",
+            "category": "backend",
+            "svg": "shopify://shop_images/python-svgrepo-com.svg"
+          }
+        },
+        "tech_tW68Gt": {
+          "type": "tech",
+          "settings": {
+            "title": "FastAPI",
+            "category": "backend",
+            "svg": "shopify://shop_images/fastapi-svgrepo-com.svg"
+          }
+        },
+        "tech_kpHVmL": {
+          "type": "tech",
+          "settings": {
+            "title": "Firebase",
+            "category": "database",
+            "svg": "shopify://shop_images/firebase-svgrepo-com.svg"
+          }
+        },
+        "tech_y6Gh4t": {
+          "type": "tech",
+          "settings": {
+            "title": "PostgreSQL",
+            "category": "database",
+            "svg": "shopify://shop_images/postgresql-svgrepo-com.svg"
+          }
+        },
+        "tech_6zqdz6": {
+          "type": "tech",
+          "settings": {
+            "title": "AWS",
+            "category": "backend",
+            "svg": "shopify://shop_images/aws-svgrepo-com_1.svg"
+          }
+        },
+        "tech_DxJXkq": {
+          "type": "tech",
+          "settings": {
+            "title": "OpenWeatherMaps",
+            "category": "apis",
+            "svg": "shopify://shop_images/1743227.svg"
+          }
+        },
+        "tech_d3Uc4e": {
+          "type": "tech",
+          "settings": {
+            "title": "OpenAI",
+            "category": "apis",
+            "svg": "shopify://shop_images/openai-svgrepo-com_2.svg"
+          }
+        },
+        "tech_wirBQP": {
+          "type": "tech",
+          "settings": {
+            "title": "Google Maps",
+            "category": "apis",
+            "svg": "shopify://shop_images/google-maps-svgrepo-com.svg"
+          }
+        },
+        "screenshot_BBhyNe": {
+          "type": "screenshot",
+          "settings": {
+            "image": "shopify://shop_images/7869AE86-C24B-470C-9CD0-FE37CEFD94E8_1_201_a.jpg"
+          }
+        }
+      },
+      "block_order": [
+        "tech_anxGrc",
+        "tech_hFQFYf",
+        "tech_HqBQNU",
+        "tech_tW68Gt",
+        "tech_kpHVmL",
+        "tech_y6Gh4t",
+        "tech_6zqdz6",
+        "tech_DxJXkq",
+        "tech_d3Uc4e",
+        "tech_wirBQP",
+        "screenshot_BBhyNe"
+      ],
+      "settings": {}
+    }
+  },
+  "order": [
+    "project-detail"
+  ]
+}

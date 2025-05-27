@@ -45,12 +45,52 @@
             "svg": "shopify://shop_images/javascript-logo-svgrepo-com.svg"
           }
         },
+        "skill_CyGrrc": {
+          "type": "skill",
+          "settings": {
+            "category": "other",
+            "title": "Github",
+            "svg": "shopify://shop_images/github-142-svgrepo-com.svg"
+          }
+        },
+        "skill_9Gzqy7": {
+          "type": "skill",
+          "settings": {
+            "category": "frontend",
+            "title": "React",
+            "svg": "shopify://shop_images/react-svgrepo-com.svg"
+          }
+        },
         "skill_G4YK7x": {
           "type": "skill",
           "settings": {
             "category": "frontend",
             "title": "HTML",
             "svg": "shopify://shop_images/html5-01-svgrepo-com_1.svg"
+          }
+        },
+        "skill_AL9pGr": {
+          "type": "skill",
+          "settings": {
+            "category": "frontend",
+            "title": "CSS",
+            "svg": "shopify://shop_images/css3-01-svgrepo-com.svg"
+          }
+        },
+        "skill_tEGRjd": {
+          "type": "skill",
+          "settings": {
+            "category": "backend",
+            "title": "Java",
+            "svg": "shopify://shop_images/java-svgrepo-com.svg"
+          }
+        },
+        "skill_qmAQ3N": {
+          "type": "skill",
+          "settings": {
+            "category": "backend",
+            "title": "Python",
+            "svg": "shopify://shop_images/python-svgrepo-com.svg"
           }
         },
         "skill_dJf6Hm": {
@@ -61,20 +101,79 @@
             "svg": "shopify://shop_images/node-svgrepo-com.svg"
           }
         },
-        "skill_CyGrrc": {
+        "skill_7kYNRc": {
+          "type": "skill",
+          "settings": {
+            "category": "backend",
+            "title": "Spring Boot",
+            "svg": "shopify://shop_images/spring-boot-svgrepo-com.svg"
+          }
+        },
+        "skill_YNzcmx": {
+          "type": "skill",
+          "settings": {
+            "category": "backend",
+            "title": "FastAPI",
+            "svg": "shopify://shop_images/fastapi-svgrepo-com.svg"
+          }
+        },
+        "skill_nQmTi3": {
+          "type": "skill",
+          "settings": {
+            "category": "backend",
+            "title": "PostgreSQL",
+            "svg": "shopify://shop_images/postgresql-svgrepo-com.svg"
+          }
+        },
+        "skill_aXk9dn": {
+          "type": "skill",
+          "settings": {
+            "category": "backend",
+            "title": "MongoDB",
+            "svg": "shopify://shop_images/mongodb-svgrepo-com.svg"
+          }
+        },
+        "skill_UhFieL": {
+          "type": "skill",
+          "settings": {
+            "category": "backend",
+            "title": "SQLite",
+            "svg": "shopify://shop_images/sqlite-svgrepo-com.svg"
+          }
+        },
+        "skill_xdz3pD": {
           "type": "skill",
           "settings": {
             "category": "other",
-            "title": "Github",
-            "svg": "shopify://shop_images/github-142-svgrepo-com.svg"
+            "title": "VSCode",
+            "svg": "shopify://shop_images/vscode-svgrepo-com.svg"
+          }
+        },
+        "skill_WhfXJh": {
+          "type": "skill",
+          "settings": {
+            "category": "other",
+            "title": "Figma",
+            "svg": "shopify://shop_images/figma-svgrepo-com.svg"
           }
         }
       },
       "block_order": [
         "skill_eym47y",
+        "skill_CyGrrc",
+        "skill_9Gzqy7",
         "skill_G4YK7x",
+        "skill_AL9pGr",
+        "skill_tEGRjd",
+        "skill_qmAQ3N",
         "skill_dJf6Hm",
-        "skill_CyGrrc"
+        "skill_7kYNRc",
+        "skill_YNzcmx",
+        "skill_nQmTi3",
+        "skill_aXk9dn",
+        "skill_UhFieL",
+        "skill_xdz3pD",
+        "skill_WhfXJh"
       ],
       "settings": {}
     },
@@ -87,7 +186,8 @@
             "image": "shopify://shop_images/7869AE86-C24B-470C-9CD0-FE37CEFD94E8_1_201_a.jpg",
             "title": "WayPoint",
             "description": "WayPoint is a React Native travel app that offers personalized destination and event recommendations based on user preferences.",
-            "link": "https://github.com/latte-labs/waypoint"
+            "link": "https://github.com/latte-labs/waypoint",
+            "details_page": "waypoint"
           }
         },
         "project_kfxDY3": {
@@ -96,7 +196,8 @@
             "image": "shopify://shop_images/Screenshot_2025-05-23_at_11.06.42_PM.png",
             "title": "Portfolio",
             "description": "A fully custom Shopify theme portfolio built from the ground up. It is fully responsive  and has a VSCode–inspired dark aesthetic to highlight both my design and coding skills.",
-            "link": ""
+            "link": "",
+            "details_page": ""
           }
         },
         "project_eMtJHF": {
@@ -105,7 +206,8 @@
             "image": "shopify://shop_images/theme_cover_image.jpg",
             "title": "Project C",
             "description": "This is sample project C to test out spacing",
-            "link": ""
+            "link": "",
+            "details_page": ""
           }
         }
       },

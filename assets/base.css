@@ -388,10 +388,49 @@ p {
     
     .skill-groups {
         flex-direction: row;
-        gap: 3rem;
+        gap: 2rem;
     }
 
     .skill-group {
         flex: 1 1 0;
     }
+}
+
+
+/* ------------------------------------------ */
+
+.project-detail {
+  padding: 2rem;
+}
+
+.project-images {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1rem;
+  margin: 2rem 0;
+}
+
+.project-images img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.back-to-portfolio {
+  text-decoration: none;
+}
+
+.tech-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.tech-item {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  gap: 1rem;
+  background-color: rgb(12,14,18);
+  padding: 0rem 1rem;
 }
