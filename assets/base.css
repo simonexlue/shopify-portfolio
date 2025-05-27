@@ -256,6 +256,7 @@ p {
     .projects {
         padding: 2rem 4rem;
     }
+
     .project-grid {
         grid-template-columns: repeat(2, 1fr);
     }
@@ -351,8 +352,8 @@ p {
 }
 
 .skill-groups {
-  display: flex;   
-  flex-direction: column;
+    display: flex;
+    flex-direction: column;
 }
 
 .skill-title {
@@ -383,9 +384,10 @@ p {
 @media (min-width: 960px) {
     .skills {
         padding: 2rem 8rem;
-        padding-bottom: 4rem;;
+        padding-bottom: 4rem;
+        ;
     }
-    
+
     .skill-groups {
         flex-direction: row;
         gap: 2rem;
@@ -400,37 +402,75 @@ p {
 /* ------------------------------------------ */
 
 .project-detail {
-  padding: 2rem;
+    padding: 2rem;
 }
 
-.project-images {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 1rem;
-  margin: 2rem 0;
+.project-detail-content {
+    padding-top: 2rem;
+    line-height: 1.5rem;
+    padding-bottom: 2rem;
 }
 
-.project-images img {
-  width: 100%;
-  height: auto;
-  object-fit: cover;
-  border-radius: 8px;
+.carousel.js-carousel {
+  display: block !important;
+  padding-top: 2rem;
+  padding-bottom: 3rem;
+  transition: transform 0.3s, opacity 0.3s, filter 0.3s;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+.carousel-cell {
+  width: 300px;  
+    justify-content: center;
+  margin: 0;  
+  display: flex; 
+  transition: transform .3s, opacity .3s, filter .3s;
+}
+.carousel-cell img {
+  display: block;
+}
+
+.carousel-cell:not(.is-selected) {
+  opacity: 0.5; 
+  transform: scale(0.85);   
+  filter: brightness(0.7);  
 }
 
 .back-to-portfolio {
-  text-decoration: none;
+    text-decoration: none;
+    color: #ffd700;
 }
 
 .tech-group {
-  display: flex;
-  flex-direction: column;
+    display: flex;
+    flex-direction: column;
 }
 
 .tech-item {
-  display: flex;
-  align-items: center;
-  justify-content: start;
-  gap: 1rem;
-  background-color: rgb(12,14,18);
-  padding: 0rem 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    gap: 1rem;
+    background-color: rgb(12, 14, 18);
+    padding: 0rem 1rem;
+}
+
+.project-wrapper {
+    display: flex;
+}
+
+@media (min-width: 768px) {
+
+    .project-detail {
+        padding: 4rem;
+    }
+}
+
+@media (min-width: 1060px) {
+
+    .tech-stack {
+        display: grid;
+        gap: 1.5rem;
+        grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+        justify-content: start;
+    }
 }

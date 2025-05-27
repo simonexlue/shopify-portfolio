@@ -1,113 +1,175 @@
 <section class="project-detail">
-  {% assign screenshots = section.blocks | where: "type", "screenshot" %}
+    {% assign screenshots = section.blocks | where: 'type', 'screenshot' %}
 
-{% if screenshots.size > 0 %}
-  <div class="project-images">
-    {% for block in screenshots %}
+    <a href="/" class="btn back-to-portfolio">← Back to Projects</a>
+    {% if screenshots.size > 0 %}
+     {% comment %} <div class="project-images">
+  {% for block in screenshots %}
+    <img
+      src="{{ block.settings.image | image_url: width: 800 }}"
+      alt="{{ block.settings.image.alt | escape }}"
+      width="800",
+      height="400"
+    />
+  {% endfor %}
+</div> {% endcomment %}
+<div class="carousel js-carousel">
+  {% for block in screenshots %}
+    <div class="carousel-cell">
       <img
-        src="{{ block.settings.image | image_url: width:1200 }}"
-        alt="{{ page.title }} screenshot {{ forloop.index }}"
-        width="800"
-        height="500"
-      >
-    {% endfor %}
-  </div>
-{% endif %}
-  <h1 class="section-titles">{{ page.title }}</h1>
-
-  <div class="tech-stack">
-    <div class="tech-group">
-      <h3>Frontend</h3>
-      <div class="tech-list">
-        {% for block in section.blocks %}
-          {% if block.settings.category == "frontend" %}
-            <span class="tech-item">
-              <img
-                src="{{ block.settings.svg | image_url: width: 50, height: 50 }}"
-                width="24",
-                height="24">
-              <p>{{ block.settings.title }}</p>
-            </span>
-            {% endif %}
-          {% endfor %}
-      </div>
+        src="{{ block.settings.image | image_url: width: 800 }}"
+        alt="{{ block.settings.image.alt | escape }}"
+        width="auto"
+        height="575"
+      />
     </div>
+  {% endfor %}
+</div>
+    {% endif %}
+    <h1 class="section-titles">&#123;% {{ page.title }} %&#125;</h1>
+    <h1>Tech Stack</h1>
+    <div class="tech-stack">
+      {% for block in section.blocks %}
+        {% if block.type == 'tech' and block.settings.category == 'frontend' %}
+          <div class="tech-group">
+            <h3>Frontend</h3>
+            <div class="tech-list">
+              {% for item in section.blocks %}
+                {% if item.type == 'tech' and item.settings.category == 'frontend' %}
+                  <span class="tech-item">
+                    <img
+                      src="{{ item.settings.svg | image_url: width:50, height:50 }}"
+                      width="24"
+                      height="24"
+                      alt="{{ item.settings.title }}"
+                    >
+                    <p>{{ item.settings.title }}</p>
+                  </span>
+                {% endif %}
+              {% endfor %}
+            </div>
+          </div>
+          {% break %}
+        {% endif %}
+      {% endfor %}
 
-    <div class="tech-group">
-      <h3>Backend</h3>
-      <div class="tech-list">
-        {% for block in section.blocks %}
-          {% if block.settings.category == "backend" %}
-            <span class="tech-item">
-              <img
-                src="{{ block.settings.svg | image_url: width: 50, height: 50 }}"
-                width="24",
-                height="24">
-              <p>{{ block.settings.title }}</p>
-            </span>
-            {% endif %}
-          {% endfor %}
-      </div>
-    </div>
+      {% for block in section.blocks %}
+        {% if block.type == 'tech' and block.settings.category == 'backend' %}
+          <div class="tech-group">
+            <h3>Backend</h3>
+            <div class="tech-list">
+              {% for item in section.blocks %}
+                {% if item.type == 'tech' and item.settings.category == 'backend' %}
+                  <span class="tech-item">
+                    <img
+                      src="{{ item.settings.svg | image_url: width:50, height:50 }}"
+                      width="24"
+                      height="24"
+                      alt="{{ item.settings.title }}"
+                    >
+                    <p>{{ item.settings.title }}</p>
+                  </span>
+                {% endif %}
+              {% endfor %}
+            </div>
+          </div>
+          {% break %}
+        {% endif %}
+      {% endfor %}
 
-    <div class="tech-group">
-      <h3>Database</h3>
-      <div class="tech-list">
-        {% for block in section.blocks %}
-          {% if block.settings.category == "database" %}
-            <span class="tech-item">
-              <img
-                src="{{ block.settings.svg | image_url: width: 50, height: 50 }}"
-                width="24",
-                height="24">
-              <p>{{ block.settings.title }}</p>
-            </span>
-            {% endif %}
-          {% endfor %}
-      </div>
-    </div>
+      {% for block in section.blocks %}
+        {% if block.type == 'tech' and block.settings.category == 'database' %}
+          <div class="tech-group">
+            <h3>Database</h3>
+            <div class="tech-list">
+              {% for item in section.blocks %}
+                {% if item.type == 'tech' and item.settings.category == 'database' %}
+                  <span class="tech-item">
+                    <img
+                      src="{{ item.settings.svg | image_url: width:50, height:50 }}"
+                      width="24"
+                      height="24"
+                      alt="{{ item.settings.title }}"
+                    >
+                    <p>{{ item.settings.title }}</p>
+                  </span>
+                {% endif %}
+              {% endfor %}
+            </div>
+          </div>
+          {% break %}
+        {% endif %}
+      {% endfor %}
 
-    <div class="tech-group">
-      <h3>External API</h3>
-      <div class="tech-list">
-        {% for block in section.blocks %}
-          {% if block.settings.category == "apis" %}
-            <span class="tech-item">
-              <img
-                src="{{ block.settings.svg | image_url: width: 50, height: 50 }}"
-                width="24",
-                height="24">
-              <p>{{ block.settings.title }}</p>
-            </span>
-            {% endif %}
-          {% endfor %}
-      </div>
-    </div>
+      {% for block in section.blocks %}
+        {% if block.type == 'tech' and block.settings.category == 'apis' %}
+          <div class="tech-group">
+            <h3>External APIs</h3>
+            <div class="tech-list">
+              {% for item in section.blocks %}
+                {% if item.type == 'tech' and item.settings.category == 'apis' %}
+                  <span class="tech-item">
+                    <img
+                      src="{{ item.settings.svg | image_url: width:50, height:50 }}"
+                      width="24"
+                      height="24"
+                      alt="{{ item.settings.title }}"
+                    >
+                    <p>{{ item.settings.title }}</p>
+                  </span>
+                {% endif %}
+              {% endfor %}
+            </div>
+          </div>
+          {% break %}
+        {% endif %}
+      {% endfor %}
 
-    <div class="tech-group">
-      <h3>Storage</h3>
-      <div class="tech-list">
-        {% for block in section.blocks %}
-          {% if block.settings.category == "storage" %}
-            <span class="tech-item">
-              <img
-                src="{{ block.settings.svg | image_url: width: 50, height: 50 }}"
-                width="24",
-                height="24">
-              <p>{{ block.settings.title }}</p>
-            </span>
-            {% endif %}
-          {% endfor %}
-      </div>
-    </div>
+      {% for block in section.blocks %}
+        {% if block.type == 'tech' and block.settings.category == 'storage' %}
+          <div class="tech-group">
+            <h3>Storage</h3>
+            <div class="tech-list">
+              {% for item in section.blocks %}
+                {% if item.type == 'tech' and item.settings.category == 'storage' %}
+                  <span class="tech-item">
+                    <img
+                      src="{{ item.settings.svg | image_url: width:50, height:50 }}"
+                      width="24"
+                      height="24"
+                      alt="{{ item.settings.title }}"
+                    >
+                    <p>{{ item.settings.title }}</p>
+                  </span>
+                {% endif %}
+              {% endfor %}
+            </div>
+          </div>
+          {% break %}
+        {% endif %}
+      {% endfor %}
   </div>
 
   <div class="project-detail-content">
     {{ page.content }}
   </div>
-
-  <a href="/" class="btn back-to-portfolio">← Back to Projects</a>
 </section>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function() {
+    var carousel = document.querySelector('.js-carousel');
+    new Flickity(carousel, {
+      cellAlign:   'center',
+      wrapAround:  true,
+      autoPlay:    false,
+      pauseAutoPlayOnHover: true,
+      pageDots:    false,
+      prevNextButtons: true,
+      adaptiveHeight: true,
+      cellSpacing: 40,
+    });
+  });
+</script>
 
 {% schema %}
 {
@@ -139,11 +201,11 @@
           "id": "category",
           "label": "Category",
           "options": [
-            {"value": "frontend", "label": "Frontend"},
-            {"value": "backend", "label": "Backend"},
-            {"value": "database", "label": "Database"},
-            {"value": "apis", "label": "External APIs" },
-            {"value": "storage", "label": "Storage"}
+            { "value": "frontend", "label": "Frontend" },
+            { "value": "backend", "label": "Backend" },
+            { "value": "database", "label": "Database" },
+            { "value": "apis", "label": "External APIs" },
+            { "value": "storage", "label": "Storage" }
           ]
         },
         {

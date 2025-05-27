@@ -92,10 +92,34 @@
             "svg": "shopify://shop_images/google-maps-svgrepo-com.svg"
           }
         },
-        "screenshot_BBhyNe": {
+        "screenshot_FVwxpQ": {
           "type": "screenshot",
           "settings": {
-            "image": "shopify://shop_images/7869AE86-C24B-470C-9CD0-FE37CEFD94E8_1_201_a.jpg"
+            "image": "shopify://shop_images/Simulator_Screenshot_-_iPhone_15_-_2025-05-26_at_23.16.12.png"
+          }
+        },
+        "screenshot_NzkPEz": {
+          "type": "screenshot",
+          "settings": {
+            "image": "shopify://shop_images/Simulator_Screenshot_-_iPhone_15_-_2025-05-26_at_22.02.19.png"
+          }
+        },
+        "screenshot_8VMTQC": {
+          "type": "screenshot",
+          "settings": {
+            "image": "shopify://shop_images/Simulator_Screenshot_-_iPhone_15_-_2025-05-26_at_22.02.39.png"
+          }
+        },
+        "screenshot_TaBfRQ": {
+          "type": "screenshot",
+          "settings": {
+            "image": "shopify://shop_images/Simulator_Screenshot_-_iPhone_15_-_2025-05-26_at_22.02.47.png"
+          }
+        },
+        "screenshot_JfbtXK": {
+          "type": "screenshot",
+          "settings": {
+            "image": "shopify://shop_images/Simulator_Screenshot_-_iPhone_15_-_2025-05-26_at_22.03.05.png"
           }
         }
       },
@@ -110,7 +134,11 @@
         "tech_DxJXkq",
         "tech_d3Uc4e",
         "tech_wirBQP",
-        "screenshot_BBhyNe"
+        "screenshot_FVwxpQ",
+        "screenshot_NzkPEz",
+        "screenshot_8VMTQC",
+        "screenshot_TaBfRQ",
+        "screenshot_JfbtXK"
       ],
       "settings": {}
     }

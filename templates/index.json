@@ -37,6 +37,14 @@
     "skills": {
       "type": "skills",
       "blocks": {
+        "skill_9YNQWN": {
+          "type": "skill",
+          "settings": {
+            "category": "frontend",
+            "title": "Liquid",
+            "svg": "shopify://shop_images/shopify-color-svgrepo-com.svg"
+          }
+        },
         "skill_eym47y": {
           "type": "skill",
           "settings": {
@@ -159,6 +167,7 @@
         }
       },
       "block_order": [
+        "skill_9YNQWN",
         "skill_eym47y",
         "skill_CyGrrc",
         "skill_9Gzqy7",
@@ -197,7 +206,7 @@
             "title": "Portfolio",
             "description": "A fully custom Shopify theme portfolio built from the ground up. It is fully responsive  and has a VSCode–inspired dark aesthetic to highlight both my design and coding skills.",
             "link": "",
-            "details_page": ""
+            "details_page": "portfolio"
           }
         },
         "project_eMtJHF": {

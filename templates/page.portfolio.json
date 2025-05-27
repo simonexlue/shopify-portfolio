@@ -1,0 +1,67 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "project-detail": {
+      "type": "project-detail",
+      "blocks": {
+        "screenshot_TQCt3F": {
+          "type": "screenshot",
+          "settings": {
+            "image": "shopify://shop_images/Screenshot_2025-05-23_at_11.06.42_PM.png"
+          }
+        },
+        "tech_yqL9EP": {
+          "type": "tech",
+          "settings": {
+            "title": "Liquid",
+            "category": "frontend",
+            "svg": "shopify://shop_images/shopify-color-svgrepo-com.svg"
+          }
+        },
+        "tech_f3TNKY": {
+          "type": "tech",
+          "settings": {
+            "title": "Javascript",
+            "category": "frontend",
+            "svg": "shopify://shop_images/javascript-logo-svgrepo-com.svg"
+          }
+        },
+        "tech_pcx9rf": {
+          "type": "tech",
+          "settings": {
+            "title": "HTML",
+            "category": "frontend",
+            "svg": "shopify://shop_images/html5-01-svgrepo-com_1.svg"
+          }
+        },
+        "tech_mxkKyq": {
+          "type": "tech",
+          "settings": {
+            "title": "CSS",
+            "category": "frontend",
+            "svg": "shopify://shop_images/css3-01-svgrepo-com.svg"
+          }
+        }
+      },
+      "block_order": [
+        "screenshot_TQCt3F",
+        "tech_yqL9EP",
+        "tech_f3TNKY",
+        "tech_pcx9rf",
+        "tech_mxkKyq"
+      ],
+      "settings": {}
+    }
+  },
+  "order": [
+    "project-detail"
+  ]
+}

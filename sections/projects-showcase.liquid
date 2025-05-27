@@ -11,9 +11,7 @@
         class="project-image">
         <h3>{{ block.settings.title }}</h3>
         <p class="project-description">{{ block.settings.description }}</p>
-        {% if block.settings.link != blank %}
           <a class="link-a" href="{{ block.settings.details_page.url }}" target="_blank">See Details</a>
-        {% endif %}
       </div>
     {% endfor %}
   </div>
