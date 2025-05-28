@@ -405,8 +405,13 @@ p {
     padding: 2rem;
 }
 
+.project-detail h1 {
+    font-size: 18px;
+    padding-top: 1rem;
+}
+
 .project-detail-content {
-    padding-top: 2rem;
+    /* padding-top: 2rem; */
     line-height: 1.5rem;
     padding-bottom: 2rem;
 }
@@ -414,7 +419,7 @@ p {
 .carousel.js-carousel {
   display: block !important;
   padding-top: 2rem;
-  padding-bottom: 3rem;
+  padding-bottom: 2rem;
   transition: transform 0.3s, opacity 0.3s, filter 0.3s;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
 }
@@ -481,7 +486,7 @@ p {
 .fx-reveal {
     opacity: 0;
     transform: translateY(40px);
-    transition: opacity 0.10s ease-out, transform 0.10s ease-out;
+    transition: opacity 1.2s ease-out, transform 1.2s ease-out;
 }
 
 .fx-reveal.fx-show {

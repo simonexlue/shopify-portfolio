@@ -22,7 +22,7 @@
 
     <script>
       document.addEventListener('DOMContentLoaded', function () {
-        const sections = document.querySelectorAll('.about-me, .skills, .project-grid, .contact-me');
+        const sections = document.querySelectorAll('.about-me, .skills, .projects, .contact-me');
 
         // observer
         const io = new IntersectionObserver(
@@ -36,7 +36,7 @@
             });
           },
           {
-            threshold: 0.2, 
+            threshold: 0.3, 
           }
         );
 

@@ -208,22 +208,11 @@
             "link": "",
             "details_page": "portfolio"
           }
-        },
-        "project_eMtJHF": {
-          "type": "project",
-          "settings": {
-            "image": "shopify://shop_images/theme_cover_image.jpg",
-            "title": "Project C",
-            "description": "This is sample project C to test out spacing",
-            "link": "",
-            "details_page": ""
-          }
         }
       },
       "block_order": [
         "project_yjjWpK",
-        "project_kfxDY3",
-        "project_eMtJHF"
+        "project_kfxDY3"
       ],
       "settings": {}
     },
